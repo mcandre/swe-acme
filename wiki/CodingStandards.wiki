@@ -2,7 +2,7 @@
 
 = Syntax =
 
- * Use !CamelCase, i.e. upperThenLowerNames for methods and variables.
+ * Use !CamelCase, i.e. lowerFollowedByUpperCase names for variables and methods. Class names BeginWithUpperCaseAndContinueUsingUpperCase.
 
  * Use hard tabs, not spaces.
 
@@ -19,3 +19,5 @@ public int getX() {
    return x;
 }
 }}}
+
+ * Each class gets its own .java file.
