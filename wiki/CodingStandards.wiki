@@ -10,8 +10,6 @@
 
  * One class per {{{.java}}} file.
 
- * Remove .class files before syncing to the Subversion repository.
-
  * Block notation and indentation are as follows:
 
 {{{
@@ -33,3 +31,9 @@ public int getX() {
    return x;
 }
 }}}
+
+= Files =
+
+ * Remove .class files before syncing to the Subversion repository.
+
+ * Use Unix (LF) line endings and UTF8 encoding.
