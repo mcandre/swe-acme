@@ -6,7 +6,9 @@
 
  * Use hard tabs, not spaces. You may need to configure your editor to do this.
 
- * Use semi-objective-c notation for variables. A typical method of access for a variable {{{x}}} is:
+ * One class per file.
+
+ * Most variables will be private. Use get and set methods for tem. A typical method of access for a variable {{{x}}} is:
 
 {{{
 int x;
@@ -19,5 +21,3 @@ public int getX() {
    return x;
 }
 }}}
-
- * One class per file.
