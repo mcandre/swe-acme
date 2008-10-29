@@ -4,7 +4,7 @@
 
  * Use !CamelCase, i.e. lowerFollowedByUpperCase names for variables and methods. Class names BeginWithUpperCaseAndContinueUsingUpperCase.
 
- * Use hard tabs, not spaces.
+ * Use hard tabs, not spaces. You may need to configure your editor to do this.
 
  * Use semi-objective-c notation for variables. A typical method of access for a variable {{{x}}} is:
 
