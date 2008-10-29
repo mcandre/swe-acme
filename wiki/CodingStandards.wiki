@@ -36,4 +36,6 @@ public int getX() {
 
  * Remove .class files before syncing to the Subversion repository.
 
+ * Remove temporary files (e.g. ~Skin.java, 229283847.tmp) created by your text editor before syncing.
+
  * Use Unix (LF) line endings and UTF8 encoding.
