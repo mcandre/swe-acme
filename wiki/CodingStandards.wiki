@@ -18,7 +18,7 @@ begin a block {
 }
 }}}
 
- * Most variables will be private. Use get and set methods for tem. A typical method of access for a variable {{{x}}} is:
+ * Most variables will be private. Use get and set methods for them. A typical method of access for a variable {{{x}}} is:
 
 {{{
 int x;
