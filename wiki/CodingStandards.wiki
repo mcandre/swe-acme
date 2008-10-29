@@ -10,6 +10,14 @@
 
  * One class per file.
 
+ * Block notation and indentation are as follows:
+
+{{{
+begin a block {
+   performOperations();
+}
+}}}
+
  * Most variables will be private. Use get and set methods for tem. A typical method of access for a variable {{{x}}} is:
 
 {{{
