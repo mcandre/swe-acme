@@ -20,4 +20,4 @@ public int getX() {
 }
 }}}
 
- * Each class gets its own .java file.
+ * One class per file.
