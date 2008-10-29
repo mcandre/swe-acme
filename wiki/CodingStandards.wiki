@@ -2,7 +2,7 @@
 
 = Syntax =
 
- * Use !CamelCase, i.e. lowerFollowedByUpperCase names for variables and methods. Class names BeginWithUpperCaseAndContinueUsingUpperCase.
+ * Use !CamelCase for just about everything, i.e. lowerFollowedByUpperCase names for variables and methods. Class names !BeginWithUpperCaseAndContinueUsingUpperCase. Constants use ALL_UPPER_CASE_WITH_UNDERSCORES.
 
  * Use hard tabs, not spaces. You may need to configure your editor to do this.
 
