@@ -2,7 +2,7 @@
 
 = Syntax =
 
- * Use "CamelCase", i.e. upperThenLowerNames for methods and variables.
+ * Use !CamelCase, i.e. upperThenLowerNames for methods and variables.
 
  * Use hard tabs, not spaces.
 
