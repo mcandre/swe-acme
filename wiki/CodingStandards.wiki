@@ -8,7 +8,9 @@
 
  * Use hard tabs, not spaces. You may need to configure your editor to do this.
 
- * One class per file.
+ * One class per {{{.java}}} file.
+
+ * Remove .class files before syncing to the Subversion repository.
 
  * Block notation and indentation are as follows:
 
