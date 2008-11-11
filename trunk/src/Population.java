@@ -1,14 +1,14 @@
 public class Population {
-	Species[] species;
+	Species species;
 	int count;
 
 	public Population() {}
 
-	public void setSpecies(Species[] s) {
+	public void setSpecies(Species s) {
 		species=s;
 	}
 
-	public Species[] getSpecies() {
+	public Species getSpecies() {
 		return species;
 	}
 
