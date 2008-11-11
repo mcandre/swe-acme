@@ -11,7 +11,7 @@ public class Teeth {
 		diet=d;
 	}
 
-	public int returnDiet() {
+	public int getDiet() {
 		return diet;
 	}
 }
