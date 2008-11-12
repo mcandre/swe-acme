@@ -1,8 +1,8 @@
 package adaptation;
 
 public class Feet {
-	int speed;
-	int attack;
+	int speed=0;
+	int attack=0;
 
 	public Feet() {}
 

@@ -7,13 +7,13 @@ public class Ecosystem {
 	public static int MILD=1;
 	public static int HOT=2;
 
-	ArrayList<Population> nonPlayerPopulations;
-	Population playerPopulation;
+	ArrayList<Population> nonPlayerPopulations=new ArrayList<Population>();
+	Population playerPopulation=new Population();
 
-	int shelterSupply;
-	int waterSupply;
-	int vegetationSupply;
-	int temperature;
+	int shelterSupply=0;
+	int waterSupply=0;
+	int vegetationSupply=0;
+	int temperature=0;
 
 	public Ecosystem() {}
 
@@ -74,14 +74,43 @@ public class Ecosystem {
 	}
 
 	public int getCarnivoreCount() {
-		// ...
+		int count=0;
+		for (Population p:nonPlayerPopulations) {
+			if (p.getSpecies().getTeeth().diet==Teeth.CARNIVORE) {
+				count+=p.getCount();
+			}
+		}
 
-		return 0;
+		return count;
 	}
 
 	public int getHerbivoreCount() {
-		// ...
+		int count=0;
+		for (Population p:nonPlayerPopulations) {
+			if (p.getSpecies().getTeeth().diet==Teeth.HERBIVORE) {
+				count+=p.getCount();
+			}
+		}
 
-		return 0;
+		return count;
+	}
+
+	public int getOmnivoreCount() {
+		int count=0;
+		for (Population p:nonPlayerPopulations) {
+			if (p.getSpecies().getTeeth().diet==Teeth.OMNIVORE) {
+				count+=p.getCount();
+			}
+		}
+
+		return count;
+	}
+
+	public int getMeatEaterCount() {
+		return getCarnivoreCount()+getOmnivoreCount();
+	}
+
+	public int getPlantEaterCount() {
+		return getHerbivoreCount()+getOmnivoreCount();
 	}
 }

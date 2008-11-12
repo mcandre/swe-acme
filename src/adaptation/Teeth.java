@@ -5,7 +5,7 @@ public class Teeth {
 	public static int CARNIVORE=1;
 	public static int OMNIVORE=2;
 
-	int diet;
+	int diet=HERBIVORE;
 
 	public Teeth() {}
 
