@@ -1,38 +1,33 @@
+import java.util.*;
 public class Ecosystem {
-	public static int MILD_CLIMATE=0;
-	public static int HOT_CLIMATE=1;
-	public static int COLD_CLIMATE=2;
-	public static int WET_CLIMATE=3;
-	public static int DRY_CLIMATE=4;
+	public static int COLD=0;
+	public static int MILD=1;
+	public static int HOT=2;
 
-	Population[] populations;
-	Population[] nonPlayerPopulations;
+	Vector<Population> populations;
+	Vector<Population> nonPlayerPopulations;
 	Population playerPopulation;
 
 	int shelterSupply;
 	int waterSupply;
 	int vegetationSupply;
-	int meatSupply;
 
-	int climate;
-	int predatorCount;
+	int temperature;
 	int plantEaterCount;
 
 	public Ecosystem() {}
 
-	public void setPopulations(Populations[] p) {
-		populations=p;
-	}
-
-	public Populations[] getPopulations() {
+	public Vector<Population> getPopulations() {
+		populations = (Vector<Population>) nonPlayerPopulations.clone();
+		populations.add(playerPopulation);
 		return populations;
 	}
 
-	public void setNonPlayerPopulations(Population[] p) {
+	public void setNonPlayerPopulations(Vector<Population> p) {
 		nonPlayerPopulations=p;
 	}
 
-	public Population[] getNonPlayerPopulations() {
+	public Vector<Population> getNonPlayerPopulations() {
 		return nonPlayerPopulations;
 	}
 
@@ -68,32 +63,20 @@ public class Ecosystem {
 		return vegetationSupply;
 	}
 
-	public void setMeatSupply(int m) {
-		meatSupply=m;
-	}
-
 	public int getMeatSupply() {
 		return meatSupply;
 	}
 
-	public void setClimate(int c) {
-		climate=c;
+	public void setTemperature(int c) {
+		temperature=c;
 	}
 
-	public int getClimate() {
-		return climate;
-	}
-
-	public void setPredatorCount(int p) {
-		predatorCount=p;
+	public int getTemperature() {
+		return temperature;
 	}
 
 	public int getPredatorCount() {
 		return predatorCount;
-	}
-
-	public void setPlantEaterCount(int p) {
-		plantEaterCount=p;
 	}
 
 	public int getPlantEaterCount() {
