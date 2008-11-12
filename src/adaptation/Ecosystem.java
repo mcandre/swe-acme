@@ -13,9 +13,7 @@ public class Ecosystem {
 	int shelterSupply;
 	int waterSupply;
 	int vegetationSupply;
-
 	int temperature;
-	int plantEaterCount;
 
 	public Ecosystem() {}
 
@@ -75,7 +73,15 @@ public class Ecosystem {
 		return temperature;
 	}
 
-	public int getPlantEaterCount() {
-		return plantEaterCount;
+	public int getCarnivoreCount() {
+		// ...
+
+		return 0;
+	}
+
+	public int getHerbivoreCount() {
+		// ...
+
+		return 0;
 	}
 }

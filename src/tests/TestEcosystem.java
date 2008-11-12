@@ -7,7 +7,7 @@ import adaptation.*;
 
 public class TestEcosystem {
 	@Test
-	public void testSomething() {
+	public void testPopulations() {
 		Ecosystem e=new Ecosystem();
 
 		ArrayList<Population> landAnimals=new ArrayList<Population>();
@@ -26,6 +26,31 @@ public class TestEcosystem {
 		ArrayList<Population> allPopulations=e.getPopulations();
 
 		assertEquals(allPopulations.size(), 4);
+	}
+
+	@Test
+	public void testSupplies() {
+		Ecosystem e=new Ecosystem();
+		e.setShelterSupply(5);
+		e.setWaterSupply(10);
+		e.setVegetationSupply(15);
+
+		assertEquals(e.getShelterSupply()+e.getWaterSupply()+e.getVegetationSupply(), 30);
+	}
+
+	@Test
+	public void testTemperature() {
+		Ecosystem e=new Ecosystem();
+		e.setTemperature(-100);
+
+		assertEquals(e.getTemperature(), -100);
+	}
+
+	@Test
+	public void testAnimalTypes() {
+		Ecosystem e=new Ecosystem();
+
+		assertEquals(e.getCarnivoreCount()+e.getHerbivoreCount(), 0);
 	}
 
 	public static junit.framework.Test suite() {
