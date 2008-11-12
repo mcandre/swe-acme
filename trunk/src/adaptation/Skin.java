@@ -1,3 +1,5 @@
+package adaptation;
+
 public class Skin {
 	int defense;
 	int insulation;

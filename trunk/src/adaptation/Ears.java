@@ -1,4 +1,6 @@
-public Ears {
+package adaptation;
+
+public class Ears {
 	int hearingRating;
 
 	public Ears() {}

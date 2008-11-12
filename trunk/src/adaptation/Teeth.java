@@ -1,3 +1,5 @@
+package adaptation;
+
 public class Teeth {
 	public static int HERBIVORE=0;
 	public static int CARNIVORE=1;
