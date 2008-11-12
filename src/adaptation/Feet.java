@@ -1,3 +1,5 @@
+package adaptation;
+
 public class Feet {
 	int speed;
 	int attack;

@@ -1,11 +1,13 @@
-import java.util.*;
+package adaptation;
+
+import java.util.ArrayList;
+
 public class Ecosystem {
 	public static int COLD=0;
 	public static int MILD=1;
 	public static int HOT=2;
 
-	Vector<Population> populations;
-	Vector<Population> nonPlayerPopulations;
+	ArrayList<Population> nonPlayerPopulations;
 	Population playerPopulation;
 
 	int shelterSupply;
@@ -17,17 +19,11 @@ public class Ecosystem {
 
 	public Ecosystem() {}
 
-	public Vector<Population> getPopulations() {
-		populations = (Vector<Population>) nonPlayerPopulations.clone();
-		populations.add(playerPopulation);
-		return populations;
-	}
-
-	public void setNonPlayerPopulations(Vector<Population> p) {
+	public void setNonPlayerPopulations(ArrayList<Population> p) {
 		nonPlayerPopulations=p;
 	}
 
-	public Vector<Population> getNonPlayerPopulations() {
+	public ArrayList<Population> getNonPlayerPopulations() {
 		return nonPlayerPopulations;
 	}
 
@@ -37,6 +33,14 @@ public class Ecosystem {
 
 	public Population getPlayerPopulation() {
 		return playerPopulation;
+	}
+
+	public ArrayList<Population> getPopulations() {
+		ArrayList<Population> allPopulations=new ArrayList<Population>();
+		allPopulations.addAll(nonPlayerPopulations);
+		allPopulations.add(playerPopulation);
+
+		return allPopulations;
 	}
 
 	public void setShelterSupply(int s) {
@@ -63,20 +67,12 @@ public class Ecosystem {
 		return vegetationSupply;
 	}
 
-	public int getMeatSupply() {
-		return meatSupply;
-	}
-
 	public void setTemperature(int c) {
 		temperature=c;
 	}
 
 	public int getTemperature() {
 		return temperature;
-	}
-
-	public int getPredatorCount() {
-		return predatorCount;
 	}
 
 	public int getPlantEaterCount() {

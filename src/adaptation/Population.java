@@ -1,3 +1,5 @@
+package adaptation;
+
 public class Population {
 	Species species;
 	int count;

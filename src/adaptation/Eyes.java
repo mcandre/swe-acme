@@ -1,4 +1,6 @@
-public Eyes {
+package adaptation;
+
+public class Eyes {
 	int visionRating;
 	int nightVision;
 

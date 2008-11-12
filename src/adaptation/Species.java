@@ -1,3 +1,5 @@
+package adaptation;
+
 public class Species {
 	public static int HOT_BLOOD=0;
 	public static int COLD_BLOOD=1;
