@@ -1,8 +1,8 @@
 package adaptation;
 
 public class Population {
-	Species species;
-	int count;
+	Species species=new Species();
+	int count=0;
 
 	public Population() {}
 
