@@ -90,7 +90,7 @@ public class TestEcosystem {
 		e.setNonPlayerPopulations(wild);
 		e.setPlayerPopulation(monsters);
 
-		assertEquals(e.getMeatEaterCount(), 6);
+		assertEquals(e.getMeatEaterCount(), 8);
 	}
 
 	@Test
@@ -137,6 +137,52 @@ public class TestEcosystem {
 		e.setPlayerPopulation(monsters);
 
 		assertEquals(e.getPlantEaterCount(), 6);
+	}
+
+	@Test
+	public void testCreatureCount() {
+		Ecosystem e=new Ecosystem();
+
+		Teeth c=new Teeth();
+		c.setDiet(Teeth.CARNIVORE);
+		Teeth h=new Teeth();
+		h.setDiet(Teeth.HERBIVORE);
+		Teeth o=new Teeth();
+		o.setDiet(Teeth.OMNIVORE);
+
+		Species dog=new Species();
+		dog.setTeeth(c);
+		Species cow=new Species();
+		cow.setTeeth(h);
+		Species monkey=new Species();
+		monkey.setTeeth(o);
+
+		Species monster=new Species();
+		monster.setTeeth(c);
+
+		Population dogs=new Population();
+		dogs.setSpecies(dog);
+		dogs.setCount(4);
+		Population cows=new Population();
+		cows.setSpecies(cow);
+		cows.setCount(4);
+		Population monkeys=new Population();
+		monkeys.setSpecies(monkey);
+		monkeys.setCount(2);
+
+		ArrayList<Population> wild=new ArrayList<Population>();
+		wild.add(dogs);
+		wild.add(cows);
+		wild.add(monkeys);
+
+		Population monsters=new Population();
+		monsters.setSpecies(monster);
+		monsters.setCount(2);
+
+		e.setNonPlayerPopulations(wild);
+		e.setPlayerPopulation(monsters);
+
+		assertEquals(e.getCreatureCount(), 12);
 	}
 
 	public static junit.framework.Test suite() {
