@@ -4,14 +4,14 @@ public class Species {
 	public static int HOT_BLOOD=0;
 	public static int COLD_BLOOD=1;
 
-	String name="";
-	Skin skin=new Skin();
-	Teeth teeth=new Teeth();
-	Feet feet=new Feet();
-	Eyes eyes=new Eyes();
-	Ears ears=new Ears();
+	private String name="";
+	private Skin skin=new Skin();
+	private Teeth teeth=new Teeth();
+	private Feet feet=new Feet();
+	private Eyes eyes=new Eyes();
+	private Ears ears=new Ears();
 
-	int blood=HOT_BLOOD;
+	private int blood=HOT_BLOOD;
 
 	public Species() {}
 

@@ -2,7 +2,7 @@ package adaptation;
 
 public class Population {
 	Species species=new Species();
-	int count=0;
+	private int count=0;
 
 	public Population() {}
 

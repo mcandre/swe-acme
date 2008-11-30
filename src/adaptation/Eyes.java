@@ -1,8 +1,8 @@
 package adaptation;
 
 public class Eyes {
-	int visionRating=0;
-	int nightVision=0;
+	private int visionRating=0;
+	private int nightVision=0;
 
 	public Eyes() {}
 

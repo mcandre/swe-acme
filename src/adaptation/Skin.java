@@ -1,9 +1,9 @@
 package adaptation;
 
 public class Skin {
-	int defense=0;
-	int insulation=0;
-	int moistureRetention=0;
+	private int defense=0;
+	private int insulation=0;
+	private int moistureRetention=0;
 
 	public Skin() {}
 
