@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class Ecosystem {
 	public static int COLD=0;
-	public static int MILD=1;
+	public static int WARM=1;
 	public static int HOT=2;
 
-	ArrayList<Population> nonPlayerPopulations=new ArrayList<Population>();
-	Population playerPopulation=new Population();
+	private ArrayList<Population> nonPlayerPopulations=new ArrayList<Population>();
+	private Population playerPopulation=new Population();
 
-	int shelterSupply=0;
-	int waterSupply=0;
-	int vegetationSupply=0;
-	int temperature=0;
+	private int shelterSupply=0;
+	private int waterSupply=0;
+	private int vegetationSupply=0;
+	private int temperature=0;
 
 	public Ecosystem() {}
 

@@ -1,7 +1,7 @@
 package adaptation;
 
 public class Ears {
-	int hearingRating=0;
+	private int hearingRating=0;
 
 	public Ears() {}
 
