@@ -76,7 +76,7 @@ public class Ecosystem {
 	public int getCarnivoreCount() {
 		int count=0;
 		for (Population p:getPopulations()) {
-			if (p.getSpecies().getTeeth().diet==Teeth.CARNIVORE) {
+			if (p.getSpecies().getTeeth().getDiet()==Teeth.CARNIVORE) {
 				count+=p.getCount();
 			}
 		}
@@ -87,7 +87,7 @@ public class Ecosystem {
 	public int getHerbivoreCount() {
 		int count=0;
 		for (Population p:getPopulations()) {
-			if (p.getSpecies().getTeeth().diet==Teeth.HERBIVORE) {
+			if (p.getSpecies().getTeeth().getDiet()==Teeth.HERBIVORE) {
 				count+=p.getCount();
 			}
 		}
@@ -98,7 +98,7 @@ public class Ecosystem {
 	public int getOmnivoreCount() {
 		int count=0;
 		for (Population p:getPopulations()) {
-			if (p.getSpecies().getTeeth().diet==Teeth.OMNIVORE) {
+			if (p.getSpecies().getTeeth().getDiet()==Teeth.OMNIVORE) {
 				count+=p.getCount();
 			}
 		}
