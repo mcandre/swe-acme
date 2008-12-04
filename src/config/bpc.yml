@@ -1,0 +1,38 @@
+--- !BodyPartsCatalog
+earsCatalog: !ArrayList<Ears>
+    - hearingRating: 0
+    - hearingRating: 1
+    - hearingRating: 2
+    - hearingRating: 3
+eyesCatalog: !ArrayList<Eyes>
+    - visionRating: 0
+      nightVision: 0
+    - visionRating: 1
+      nightVision: 0
+    - visionRating: 2
+      nightVision: 0
+    - visionRating: 3
+      nightVision: 0
+feetCatalog: !ArrayList<Feet>
+    - speed: 0
+      attack: 3
+    - speed: 1
+      attack: 2
+    - speed: 2
+      attack: 1
+    - speed: 3
+      attack: 0
+skinCatalog: !ArrayList<Skin>
+    - defense: 2
+      insulation: 0
+      moistureRetention: 3
+    - defense: 0
+      insulation: 0
+      moistureRetention: 1
+    - defense: 3
+      insulation: 3
+      moistureRetention: 0
+teethCatalog: !ArrayList<Teeth>
+    - diet: 0
+    - diet: 1
+    - diet: 2
